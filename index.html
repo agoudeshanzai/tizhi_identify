@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/static/css/style-liberty.css">
+        <link rel="stylesheet" href="/static/css/landy_bootstrap.css" />
+        <link rel="stylesheet" href="/static/css/landy_default.css" />
+        <link rel="stylesheet" href="/static/css/main.css" />
+        <script type="text/javascript" src="/static/js/main.js" ></script>
+        <script type="text/javascript" src="/static/js/tizhi.js"></script>
+        <title>中医体质识别</title>
+    </head>
+    <body>
+        <header id="site-header" class="fixed-top nav-fixed">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
+                    <h1><a class="navbar-brand pe-xl-5 pe-lg-4" href="index.html">
+                            <span class="sublog">热视</span>健康
+                        </a></h1>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                        <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-lg-auto my-2 my-lg-0 navbar-nav-scroll">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">主页</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page">关于体质</a>
+                                <ul class="sub-menu collapse" id="submenu-1-2">
+                                    <li class="nav-item"><a href="about-us.html">中医体质介绍</a></li>
+                                    <li class="nav-item"><a href="appointment.html">名家讲评</a></li>
+                                    <li class="nav-item"><a href="time-table.html">书籍</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">产品展示</a>
+                                <ul class="sub-menu collapse" id="submenu-1-3">
+                                    <li class="nav-item"><a href="services.html">产品介绍</a></li>
+                                    <li class="nav-item"><a href="service-single.html">领导团队</a></li>
+                                    <li class="nav-item"><a href="service-single.html">技术优势</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">健康养生</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">新闻资讯</a>
+                            </li>
+                        </ul>
+                        </div> <!-- navbar collapse -->
+                        <div class="button add-list-button">
+                            <a href="appointment.html" class="btn">联系我们</a>
+                        </div>
+                        <!-- toggle switch for light and dark theme -->
+                        <div class="mobile-position">
+                            <nav class="navigation">
+                                <div class="theme-switch-wrapper">
+                                    <label class="theme-switch" for="checkbox">
+                                        <input type="checkbox" id="checkbox">
+                                        <div class="mode-container">
+                                            <i class="gg-sun"></i>
+                                            <i class="gg-moon"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section id="w3l-main-slider" class="w3l-main-slider banner-slider" id="home">
+            <div class="owl-one owl-carousel owl-theme owl-loaded owl-drag">
+                <div class="item">
+                    <div class="slider-info banner-view banner-top1">
+                        <div class="container">
+                            <div class="banner-info">
+                                <h3>红外热成像<span>中医体质辨别</span></h3>
+                                <div class="banner-info-top">
+                                    <p>专业红外热成像处理软件，可快速、准确、高效地识别不同场景下面部数据</p>
+                                    <form action="/info/" method="post" enctype="multipart/form-data">
+                                        <input type="file" class="" id="btn_file" name="pic1"/>
+                                        <button type="button" onclick="F_Open_dialog()"  class="btn btn-style btn-outline-light mt-sm-5 mt-4">选择图片</button>
+                                        <input type="submit" class="btn btn-style btn-outline-light mt-sm-5 mt-4" value="种类识别"/>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="item">
+                    <div class="slider-info banner-view banner-top2">
+                        <div class="container">
+                            <div class="banner-info">
+                                <h3>红外热成像<span>中医体质辨别</span></h3>
+                                <div class="banner-info-top">
+                                    <p>便捷式应用、多渠道/多终端 在线体质辨别，随时随地享受健康</p>
+                                    <form action="/info/" method="post" enctype="multipart/form-data">
+                                        <input type="file" class="xfile" id="btn_file" name="pic1">
+                                        <button type="button" onclick="F_Open_dialog()" class="btn btn-style btn-outline-light mt-sm-5 mt-4">选择图片</button>
+                                        <input type="submit" class="btn btn-style btn-outline-light mt-sm-5 mt-4" value="种类识别">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-info banner-view banner-top3">
+                        <div class="container">
+                            <div class="banner-info">
+                                <h3>红外热成像<span>中医体质辨别</span></h3>
+                                <div class="banner-info-top">
+                                    <p>采用基于ResNet50的深度学习图像处理算法,精度高、速度快、适应性强</p>
+                                    <form action="/info/" method="post" enctype="multipart/form-data">
+                                        <input type="file" class="xfile" id="btn_file" name="pic1"/>
+                                        <button type="button" onclick="F_Open_dialog()" class="btn btn-style btn-outline-light mt-sm-5 mt-4">选择图片</button>
+                                        <input type="submit" class="btn btn-style btn-outline-light mt-sm-5 mt-4" value="种类识别"/>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-info banner-view banner-top4">
+                        <div class="container">
+                            <div class="banner-info">
+                                <h3>红外热成像<span>中医体质辨别</span></h3>
+                                <div class="banner-info-top">
+                                    <p>详细全面的体质评估报告，搭配饮食、运动、心态等方面健康指导</p>
+                                    <form action="/info/" method="post" enctype="multipart/form-data">
+                                        <input type="file" class="xfile" id="btn_file" name="pic1">
+                                        <button type="button" onclick="F_Open_dialog()" class="btn btn-style btn-outline-light mt-sm-5 mt-4">选择图片</button>
+                                        <input type="submit" class="btn btn-style btn-outline-light mt-sm-5 mt-4" value="种类识别">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="w3l-index2" class="w3l-index2" id="about">
+            <div class="midd-w3 py-5">
+                <div class="container py-md-5 py-3">
+                    <!--/row-1-->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="w3shape position-relative">
+                                <img src="/static/img/index/5.jpg" alt="" class="radius-image-full img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-lg-0 mt-md-5 mt-4 align-self ps-lg-5">
+                            <div class="title-content text-left">
+                                <h3 class="title-w3l">什么是
+                                    <span class="span-bold">体质</span>
+                                </h3>
+                            </div>
+                            <p class="mt-md-4 mt-3">人是天地万物的一部分，而天地在化生万物的过程中，很少会把阴阳五行之气完全均匀的分配到每一个个体。于是就出现了：有人阴偏不足，有人阳偏有余，
+                            有人湿气较盛，有人肺气素亏。凡此种种，每个个体都有着属于自己的一种身体特质，即是体质。在所有的体质类型中，阴阳平和的体质是最为理想的，但在人群中出现的机会非常少。
+                            大部分人，或此有余，或彼不足，体质中都存在着某种“偏”性。正是这种偏性，决定着我们的身体更容易罹患哪方面的病症。所谓的体质养生，本质上就是要尽量纠正这种偏性，使其朝着阴阳平衡的方向来改善。</p>
+                            <div>
+                                <a href="about.html" class="btn btn-style btn-primary mt-lg-5 mt-4">了解更多<span class="fas fa-angle-double-right ms-2"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row w3l-circles">
+                        <div class="col-lg-6 circles-left pe-lg-5 p-lg-0">
+                            <div class="title-content text-left">
+                                <h3 class="title-w3l">使用
+                                    <span class="span-bold">红外热成像辨别</span>
+                                </h3>
+                            </div>
+                            <p class="mt-4">红外热成像技术可以通过检测人体表面的红外辐射来反映人体的热分布情况。根据中医理论，不同体质的人体内部气血运行和代谢状况不同，导致体表的热分布也存在差异。
+                                因此，通过红外热成像可以观察到这些不同体质在体表的热量分布特征，从而间接反映出中医体质类型。</p>
+                            <div class="w3l-two-buttons">
+                                <a href="about.html" class="btn btn-style btn-primary mt-lg-5 mt-4">了解更多<span class="fas fa-angle-double-right ms-2"></span></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 circles-right mt-lg-0 mt-5 align-self position-relative">
+                            <div class="progress-circles text-lg-right">
+                                <div class="circle1">
+                                    <image src="/static/img/index/助教统计.png" alt="" class="resize-image"></image>
+                                    <h4>信息获取</h4>
+                                </div>
+                                <div class="circle1">
+                                    <image src="/static/img/index/安全A.png" alt="" class="resize-image"></image>
+                                    <h4 class="text-resize">无损伤性</h4>
+                                </div>
+                                <div class="circle1">
+                                    <image src="/static/img/index/amount-color.png" alt="" class="resize-image"></image>
+                                    <h4>数据化</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="w3shape position-relative">
+                                <br/>
+                                <img src="/static/img/index/王琦.png" alt="" class="radius-image-full img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-lg-0 mt-md-5 mt-4 align-self ps-lg-5">
+                            <div class="title-content text-left">
+                                <h3 class="title-w3l">中国人九种体质的发现</span>
+                                </h3>
+                            </div>
+                            <p class="mt-md-4 mt-3">王琦，中国工程院院士，国医大师,现任北京中医药大学终身教授、主任医师、博士生导师，北京中医药大学国家中医体质与治未病研究院院长，
+                                国家中医药管理局重点学科中医体质学科带头人。<br/>发现中国人九种体质类型及体质和疾病相关性，创立中医体质学新学科，制定中国首部体质分类行业标准，创建体质辨识法，为中医科学创新成果进入国家公共卫生体系的历史性突破</p>
+                            <div>
+                                <a href="about.html" class="btn btn-style btn-primary mt-lg-5 mt-4">了解更多<span class="fas fa-angle-double-right ms-2"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="extra-features1" class="extra-features1 bg-primary1">
+            <div class="container1 text-center1">
+                <header>
+                <h2>体质分类</h2>
+                <div class="row1">
+                    <p class="lead1 col-lg-8 mx-auto">体质，是由先天遗传和后天相互影响所形成的,人类个体在形态结构和功能活动方面<br/>所固有的相对稳定的特性，所产生的具有“寒” “热” “虚” “实”特征的身体特质。</p>
+                </div>
+                </header>
+                <div class="grid row1">
+                    <div class="item1 col1-lg-4 col1-md-6">
+                        <div class="icon1"> <i class="icon1-diploma"></i></div>
+                        <h3 class="h51">气虚质</h3>
+                        <p>元气不足，以疲乏、气短、自汗，肌肉松软不实，抵抗力较差，不耐受风、寒、暑、湿邪，极易感冒</p>
+                    </div>
+                    <div class="item1 col1-lg-4 col1-md-6">
+                        <div class="icon1"> <i class="icon1-diploma1"></i></div>
+                        <h3 class="h51">阳虚质</h3>
+                        <p>阳气不足，以畏寒怕冷、手足不温等虚寒</p>
+                    </div>
+                    <div class="item1 col1-lg-4 col1-md-6">
+                        <div class="icon1"> <i class="icon1-diploma2"></i></div>
+                        <h3 class="h51">阴虚质</h3>
+                        <p>口燥咽干、手足心热，人形体多偏瘦，会形成阴虚阳亢证，常表现为手足心热、口燥咽干、鼻微干、喜冷饮等，耐冬不耐夏</p>
+                    </div>
+                
+                    <div class="item1 col1-lg-4 col1-md-6">
+                        <div class="icon1"> <i class="icon1-diploma3"></i></div>
+                        <h3 class="h51">痰湿质</h3>
+                        <p>皮肤油脂较多，汗多且黏、胸闷、痰多，性格偏温和，善于忍耐，易患糖尿病、中风等，对梅雨季节及潮湿环境适应能力较差</p>
+                    </div>
+                    <div class="item1 col1-lg-4 col1-md-6">
+                        <div class="icon1"> <i class="icon1-diploma4"></i></div>
+                        <h3 class="h51">平和质</h3>
+                        <p>面色红润、精力充沛、心态平和、体态均匀适中等</p>
+                    </div>
+                    <div class="item1 col1-lg-4 col1-md-6">
+                        <div class="icon1"> <i class="icon1-diploma5"></i></div>
+                        <h3 class="h51">血瘀质</h3>
+                        <p>血行不畅、肤色晦黯、舌苔紫黯、易烦、健忘，不耐受寒冷气候</p>
+                    </div>
+                    <div class="item1 col1-lg-4 col1-md-6">
+                        <div class="icon1"> <i class="icon1-diploma6"></i></div>
+                        <h3 class="h51">湿热质</h3>
+                        <p>容易生痤疮，口苦口干、大便粘腻不畅或燥结、小便短黄；性格多烦躁易怒，不善忍耐，不耐受炎热或湿热气候</p>
+                    </div>
+                    <div class="item1 col1-lg-4 col1-md-6">
+                        <div class="icon1"> <i class="icon1-diploma7"></i></div>
+                        <h3 class="h51">气郁质</h3>
+                        <p>形体多消瘦，性格内向、敏感多虑、多愁善感</p>
+                    </div>
+                    <div class="item1 col1-lg-4 col1-md-6">
+                        <div class="icon1"> <i class="icon1-diploma8"></i></div>
+                        <h3 class="h51">特禀质</h3>
+                        <p>以生理缺陷、过敏反应等为主要特征。过敏体质常见哮喘、风团、咽痒、喷嚏、鼻塞等</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w3l-clients pb-5" id="clients">
+            <!-- /grids -->
+            <div class="cusrtomer-layout py-5">
+                <div class="container py-lg-4 py-md-3 ">
+                    <div class="heading text-center mx-auto">
+                        <h3 class="title-w3l mb-5">中医体质
+                            <span class="span-bold">养生建议</span>
+                        </h3>
+                    </div>
+                    <!-- /grids -->
+                    <div class="testimonial-width">
+                        <div id="owl-demo1" class="owl-two owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="testimonial-content">
+                                    <div class="testimonial">
+                                        <blockquote>
+                                            <q><i class="fas fa-quote-left"></i> 饮食在中医个性化调理中占据着重要地位。
+                                                不同体质类型的人需要不同的饮食方案来平衡体内的阴阳五行。例如,属于寒性体质的人应该多食用温热食材,如姜、辣椒,以帮助身体保持温暖。
+                                                相反,属于燥性体质的人需要多喝水和食用滋润的食物,以保持体内水分平衡。</q>
+                                        </blockquote>
+                                        <div class="testi-des">
+                                            <div class="peopl align-self">
+                                                <h3>韩健</h3>
+                                                <p class="indentity">医药养生保健报</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-content">
+                                    <div class="testimonial">
+                                        <blockquote>
+                                            <q><i class="fas fa-quote-left"></i>从体质的变化时间上,春、夏季人体阳气随自然界阳气的增长而增加，到夏季时达到峰值。春夏季适量的运动锻炼有利于人体阳气的升发,是生长的季节。
+                                                秋、冬季人体内的阳气随着自然界阴气的盛长而收藏,这时进行高强度的训练能敛阴护阳.益固人体阴液,增强人体体质。</q>
+                                        </blockquote>
+                                        <div class="testi-des">
+                                            <div class="peopl align-self">
+                                                <h3>张靖</h3>
+                                                <p class="indentity">武汉体育学院运动免疫学研究中心</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-content">
+                                    <div class="testimonial">
+                                        <blockquote>
+                                            <q><i class="fas fa-quote-left"></i> 肥者多痰湿, 饮食上以清淡素食为主, 多食健脾利水之品, 如冬瓜, 少食肥甘厚腻之品, 以免助湿生痰, 以“早餐吃好, 午餐吃饱, 晚餐吃少”为原则;
+                                                生活中要多锻炼, 至汗出为宜;起居上, 环境以干燥清爽为宜, 避免潮湿, 防湿邪侵袭, 易感身重困倦无力</q>
+                                        </blockquote>
+                                        <div class="testi-des">
+                                            <div class="peopl align-self">
+                                                <h3>罗伟康</h3>
+                                                <p class="indentity">山东中医药大学中医学院</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-content">
+                                    <div class="testimonial">
+                                        <blockquote>
+                                            <q><i class="fas fa-quote-left"></i> 阳气不足, 卫外失固, 易感外邪。在寒热交替之际, 衣物更换幅度不要太大, 注意身体保暖, 冬季多运动, 夏季不易剧烈活动;
+                                                饮食上多食性热的食物, 如肉类熟食, 少吃生冷食物;起居上保证充足睡眠, 避免劳累过度。使阳气充盛、阴阳气血相和。</q>
+                                        </blockquote>
+                                        <div class="testi-des">
+                                            <div class="peopl align-self">
+                                                <h3>梁镕伊</h3>
+                                                <p class="indentity">山东中医药大学针灸推拿学院</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-content">
+                                    <div class="testimonial">
+                                        <blockquote>
+                                            <q><i class="fas fa-quote-left"></i>素体阴虚, 阴津亏耗。饮食上以清淡饮食为主, 少食温燥之食, 来滋阴生津;起居上保证充足睡眠、作息时间规律。若孕妇素体阴虚, 可用药物调理, 如《格致余论》中记载:“予之次女, 形瘦性急, 体本有热”, 嘱其女以“四物汤加减服之”, 以滋阴降火。</q>
+                                        </blockquote>
+                                        <div class="testi-des">
+                                            <div class="peopl align-self">
+                                                <h3>李英帅</h3>
+                                                <p class="indentity">北京中医药大学</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-content">
+                                    <div class="testimonial">
+                                        <blockquote>
+                                            <q><i class="fas fa-quote-left"></i>瘀血阻滞, 会导致气机不畅, 经脉阻滞, 饮食上配伍使用活血行气的食物, 如山楂、玫瑰, 避免生冷之品;
+                                                生活中多做有利于关节活动的运动, 比如健美操、瑜伽等, 防止瘀血阻滞经脉, 关节疼痛不利, 保持心情舒畅, 少生闷气, 少动怒, 防伤肝致疏泄不利。</q>
+                                        </blockquote>
+                                        <div class="testi-des">
+                                            <div class="peopl align-self">
+                                                <h3>孙广仁</h3>
+                                                <p class="indentity">《中医基础理论》</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-content">
+                                    <div class="testimonial">
+                                        <blockquote>
+                                            <q><i class="fas fa-quote-left"></i>气郁体质多肝郁脾虚, 思虑过度, 心情抑郁。饮食上建议多食芽类、绿叶类、行气类食物, 如春芽、韭菜、陈皮粥等, 以发散疏理气机。
+                                                生活中注意胁肋部保暖, 使肝脏生理功能正常, 气机畅达、气血和调, 则精神乃居, 保持心境平和, 调养心神。</q>
+                                        </blockquote>
+                                        <div class="testi-des">
+                                            <div class="peopl align-self">
+                                                <h3>史兰俊</h3>
+                                                <p class="indentity">中医临床研究</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-content">
+                                    <div class="testimonial">
+                                        <blockquote>
+                                            <q><i class="fas fa-quote-left"></i> 特禀者多是先天不足, 饮食上注意荤素搭配, 过敏体质者要避开辛辣、腥味等刺激性强的食物;生活中, 要注意季节变化, 尤其是春夏季, 减少外出时间, 防止花粉等异物过敏;
+                                                以乐观心态对待生活, 可采取中医“治未病”的思想, 提前检查身体, 做到及时预防, 及时诊治, 调养身心健康。</q>
+                                        </blockquote>
+                                        <div class="testi-des">
+                                            <div class="peopl align-self">
+                                                <h3>王文</h3>
+                                                <p class="indentity">山东中医药大学中医学院</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /grids -->
+            </div>
+            <!-- //grids -->
+        </section>
+        <footer class="w3l-footer-29-main">
+            <div class="footer-29 py-5">
+                <div class="container py-lg-4">
+                    <div class="row align-items-center mb-3">
+                        <h2 class="sign-left col-lg-7"> 我们的模型和数据，为您提供最专业的中医体质辨识服务！ </h2>
+                        <div class="footerw3-btn col-lg-5 ps-lg-5"><a href="#" class="btn btn-secondary btn-style"> 免费在线使用 <span class="fas fa-angle-double-right ms-2"></span></a></div>
+                    </div>
+    
+                    <div class="row footer-top-29 mt-md-5 mt-4">
+                        <div class="col-lg-4 col-md-6 footer-list-29 footer-1 pe-lg-5">
+                            <h6 class="footer-title-29">关于我们</h6>
+                            <div class="footer-listw3-grids">
+                                <p class="pe-lg-4">宁波热视健康公司是一家专业从事中医体质辨识的公司,利用AI+大数据技术模式创新实践 </p>
+                                <div class="w3pt-call-box mt-4">
+                                    <div class="w3pt-call-info">
+                                        <h5>获取支持</h5>
+                                        <h5><a href="tel:+1(21) 234 557 456"><i class="fas fa-phone-alt me-1"></i> +1(21) 234 557 456</a></h5>
+                                        <h5><a href="tel:+1(21) 234 4568"><i class="far fa-envelope me-1"></i> support@mail.com</a></h5>
+                                    </div>
+    
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="col-lg-2 col-md-6 footer-list-29 footer-3 mt-lg-0 mt-5">
+                            <h6 class="footer-title-29">关于体质</h6>
+                            <div class="footer-listw3-grids">
+                                <ul class="footer-listw3">
+                                    <li><a href="#us">中医体质介绍</a></li>
+                                    <li><a href="#team">名医讲评</a></li>
+                                    <li><a href="#pro">书籍</a></li>
+                                    <li><a href="#blog">健康养生</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 footer-list-29 footer-3 mt-lg-0 mt-5">
+                            <h6 class="footer-title-29">产品展示</h6>
+                            <div class="footer-listw3-grids">
+                                <ul class="footer-listw3">
+                                    <li><a href="#lift">产品介绍</a></li>
+                                    <li><a href="#cardio">领导团队</a></li>
+                                    <li><a href="#fit">技术优势</a></li>
+                                    <li><a href="#tips">新闻资讯</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-4 col-md-6 footer-list-29 footer-4 mt-lg-0 mt-5 ps-lg-5">
+                            <form action="#" class="subscribe" method="post">
+                                <input type="email" name="email" placeholder="Your Email Address" required="">
+                                <button><span class="fas fa-paper-plane"></span></button>
+                            </form>
+                            <div class="main-social-footer-29 mt-4">
+                                <a href="#facebook" class="facebook"><span class="fab fa-facebook-f"></span></a>
+                                <a href="#twitter" class="twitter"><span class="fab fa-twitter"></span></a>
+                                <a href="#instagram" class="instagram"><span class="fab fa-instagram"></span></a>
+    
+                                <a href="#linkd" class="linkd"><span class="fab fa-linkedin-in"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-copies text-center">
+                        <p class="copy-footer-29">© reshijiankang. All rights reserved.
+                    </div>
+                </div>
+            </div>
+            <!-- move top -->
+            <button onclick="topFunction()" id="movetop" title="Go to top">
+                <span class="fa fa-angle-up"></span>
+            </button>
+            <script>
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {
+                    scrollFunction()
+                };
+    
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementById("movetop").style.display = "block";
+                    } else {
+                        document.getElementById("movetop").style.display = "none";
+                    }
+                }
+    
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+    
+            </script>
+            <!-- //move top -->
+    
+        </footer>
+        <script src="/static/js/jquery-3.3.1.min.js"></script>
+        <script src="/static/js/theme-change.js"></script>
+        <!-- Lightbox --
+        <script src="/static/js/jquery-2.1.4.min.js"></script>
+        <script src="/static/js/simpleLightbox.js"></script>
+        <script>
+            $('.w3layouts_gallery_grid a').simpleLightbox();
+
+        </script>
+        <!-- //Lightbox -->
+        <script src="/static/js/jquery-1.9.1.min.js"></script>
+        <!-- faq -->
+        <script>
+            const items = document.querySelectorAll(".accordion button");
+
+            function toggleAccordion() {
+                const itemToggle = this.getAttribute('aria-expanded');
+
+                for (i = 0; i < items.length; i++) {
+                    items[i].setAttribute('aria-expanded', 'false');
+                }
+
+                if (itemToggle == 'false') {
+                    this.setAttribute('aria-expanded', 'true');
+                }
+            }
+
+            items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+        </script>
+        <!-- //faq -->
+        <script src="/static/js/easyResponsiveTabs.js"></script>
+        <!--Plug-in Initialisation-->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                //Horizontal Tab
+                $('#parentHorizontalTab').easyResponsiveTabs({
+                    type: 'default', //Types: default, vertical, accordion
+                    width: 'auto', //auto or any width like 600px
+                    fit: true, // 100% fit in a container
+                    tabidentify: 'hor_1', // The tab groups identifier
+                    activate: function(event) { // Callback function if tab is switched
+                        var $tab = $(this);
+                        var $info = $('#nested-tabInfo');
+                        var $name = $('span', $info);
+                        $name.text($tab.text());
+                        $info.show();
+                    }
+                });
+            });
+
+        </script>
+        <script src="/static/js/circles.js"></script>
+        <!-- owlcarousel -->
+        <script src="/static/js/owl.carousel.js"></script>
+        <!-- script for banner slider-->
+        <script>
+            $(document).ready(function() {
+                $('.owl-one').owlCarousel({
+                    loop: true,
+                    margin: 0,
+                    nav: false,
+                    responsiveClass: true,
+                    autoplay: true,
+                    autoplayTimeout: 5000,
+                    autoplaySpeed: 1000,
+                    autoplayHoverPause: false,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        480: {
+                            items: 1
+                        },
+                        667: {
+                            items: 1
+                        },
+                        1000: {
+                            items: 1
+                        }
+                    }
+                })
+            })
+
+        </script>
+        <!-- script for tesimonials carousel slider -->
+        <script>
+            $(document).ready(function() {
+                $("#owl-demo1").owlCarousel({
+                    loop: true,
+                    margin: 200,
+                    nav: false,
+                    responsiveClass: true,
+                    responsive: {
+                        0: {
+                            items: 1,
+                            nav: false
+                        },
+                        736: {
+                            items: 1,
+                            nav: false
+                        },
+                        1000: {
+                            items: 2,
+                            nav: false,
+                            margin: 30,
+                            loop: false
+                        }
+                    }
+                })
+            })
+
+        </script>
+        <!-- //script for tesimonials carousel slider -->
+        <script src="/static/js/jquery.magnific-popup.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.popup-with-zoom-anim').magnificPopup({
+                    type: 'inline',
+
+                    fixedContentPos: false,
+                    fixedBgPos: true,
+
+                    overflowY: 'auto',
+
+                    closeBtnInside: true,
+                    preloader: false,
+
+                    midClick: true,
+                    removalDelay: 300,
+                    mainClass: 'my-mfp-zoom-in'
+                });
+
+                $('.popup-with-move-anim').magnificPopup({
+                    type: 'inline',
+
+                    fixedContentPos: false,
+                    fixedBgPos: true,
+
+                    overflowY: 'auto',
+
+                    closeBtnInside: true,
+                    preloader: false,
+
+                    midClick: true,
+                    removalDelay: 300,
+                    mainClass: 'my-mfp-slide-bottom'
+                });
+            });
+
+        </script>
+
+        <script>
+            $(window).on("scroll", function() {
+                var scroll = $(window).scrollTop();
+
+                if (scroll >= 80) {
+                    $("#site-header").addClass("nav-fixed");
+                } else {
+                    $("#site-header").removeClass("nav-fixed");
+                }
+            });
+
+            //Main navigation Active Class Add Remove
+            $(".navbar-toggler").on("click", function() {
+                $("header").toggleClass("active");
+            });
+            $(document).on("ready", function() {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+                $(window).on("resize", function() {
+                    if ($(window).width() > 991) {
+                        $("header").removeClass("active");
+                    }
+                });
+            });
+
+        </script>
+        <script>
+            $(function() {
+                $('.navbar-toggler').click(function() {
+                    $('body').toggleClass('noscroll');
+                })
+            });
+
+        </script>
+        <script src="/static/js/bootstrap.min.js"></script>
+    </body>
+</html>
